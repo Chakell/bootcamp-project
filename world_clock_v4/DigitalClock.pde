@@ -27,7 +27,7 @@ class DigitalClock
     fill(0);
     textSize(fontSize);
     textAlign(CENTER, CENTER);
-    text(c.getHour() + ":" + nf(c.getMinute(), 2) + ":" + nf(c.getSecond()/60, 2), positionX, positionY);
+    text(c.getHour() + ":" + nf(minute(), 2) + ":" + nf(second(), 2), positionX, positionY);
     text(c.getDay() +"/" + String.valueOf(c.getMonth()) + "/" + String.valueOf(c.getYear()), positionx, positiony);
     textSize(32);
     text(c.getName(), positionx2, positiony2);
